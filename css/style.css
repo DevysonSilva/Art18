@@ -502,11 +502,220 @@ ul, ol {
   animation: slideInUp 0.8s ease-out forwards;
 }
 
+.portfolio {
+  padding: var(--spacing-xl) var(--spacing-sm);
+  background-color: var(--color-white);
+  text-align: center;
+}
 
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.portfolio-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: var(--spacing-lg);
+}
 
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-md);
+  align-items: center;
+}
 
+.portfolio-item {
+  padding: var(--spacing-sm);
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
 
+.portfolio-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Animação fade-in */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-animate="fade-in"] {
+  opacity: 0;
+}
+
+[data-animate="fade-in"].visible {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.diferenciais {
+  padding: var(--spacing-xl) var(--spacing-sm);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.diferenciais-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.diferenciais-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.diferencial-item {
+  background-color: #111;
+  padding: var(--spacing-md);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: transform var(--transition-base), border-color var(--transition-base);
+}
+
+.diferencial-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-blue);
+}
+
+.diferencial-icon {
+  height: 64px;
+  width: 64px;
+  margin: 0 auto var(--spacing-sm);
+}
+
+.diferencial-icon img {
+  max-width: 100%;
+  height: auto;
+}
+
+.diferencial-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-blue-light);
+}
+
+.diferencial-item p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--color-gray-light);
+}
+
+/* Animação slide-up */
+[data-animate="slide-up"] {
+  opacity: 0;
+}
+
+[data-animate="slide-up"].visible {
+  animation: slideInUp 0.8s ease-out forwards;
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.faq {
+  padding: var(--spacing-xl) var(--spacing-sm);
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-blue);
+  text-align: center;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-blue-light);
+  text-align: left;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: var(--spacing-md) 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-blue);
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-question::after {
+  content: '▼';
+  position: absolute;
+  right: 0;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question::after {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding-bottom: var(--spacing-md);
+}
+
+/* Animação slide-up no scroll */
+[data-animate="slide-up"] {
+  opacity: 0;
+}
+
+[data-animate="slide-up"].visible {
+  animation: slideInUp 0.8s ease-out forwards;
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 
