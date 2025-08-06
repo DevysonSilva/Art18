@@ -30,3 +30,26 @@ document.querySelectorAll('.faq-question').forEach(button => {
     item.classList.toggle('active');
   });
 });
+
+// Número do WhatsApp (com DDI + DDD)
+const telefoneWhatsApp = "5581986309453";
+
+document.getElementById("form-contato").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const nome = document.getElementById("nome").value.trim();
+  const mensagem = document.getElementById("mensagem").value.trim();
+
+  if (!nome || !mensagem) {
+    alert("Por favor, preencha todos os campos.");
+    return;
+  }
+
+  // Monta o texto para o WhatsApp
+  const texto = `Olá, meu nome é ${nome}.%0A%0A${mensagem}`;
+  const url = `https://wa.me/${telefoneWhatsApp}?text=${texto}`;
+
+  // Abre no WhatsApp
+  window.open(url, "_blank");
+});
+
