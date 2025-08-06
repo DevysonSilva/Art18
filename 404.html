@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página não encontrada</title>
+<style>
+:root {
+  /* Cores principais */
+  --color-blue: #11d1d1;
+  --color-black: #000000;
+  --color-white: #dedee0;
+
+  /* Cores auxiliares e hover */
+  --color-blue-light: #2A5CF7;
+  --color-gray-light: #E5E5E5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-blue);
+  animation: pulse 1.5s infinite;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color-blue);
+  color: var(--color-black);
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--color-blue-light);
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { text-shadow: 0 0 10px var(--color-blue); }
+  50% { text-shadow: 0 0 20px var(--color-blue-light); }
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="error-code">404</h1>
+    <h2>Página não encontrada</h2>
+    <p>Infelizmente, a página que você procura não existe ou foi movida.</p>
+    <a href="/" class="btn">Voltar para o início</a>
+  </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const errorCode = document.getElementById("error-code");
+  let glow = true;
+  setInterval(() => {
+    errorCode.style.color = glow ? "var(--color-blue-light)" : "var(--color-blue)";
+    glow = !glow;
+  }, 800);
+});
+</script>
+</body>
+</html>
