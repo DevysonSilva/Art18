@@ -1,0 +1,19 @@
+/* TEAM */
+
+Developer: Devyson Silva
+Role: Web Developer
+Contact: devysonssilva@gmail.com
+Location: Pernambuco, Brasil
+
+/* SITE */
+
+Site: Agência ART18
+URL: https://art18agencia.icu
+Description: Agência de comunicação e marketing com foco em criatividade, estratégia e presença digital.
+Built with: HTML, CSS, JavaScript (Vanilla)
+Created: Agosto de 2025
+Theme color: #0042D6 (azul da marca)
+
+/* THANKS */
+
+Thanks to: Adria Santos – CEO da ART18, por confiar na criação.

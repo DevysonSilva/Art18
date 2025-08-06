@@ -1,0 +1,6 @@
+# robots.txt para https://art18agencia.icu
+
+User-agent: *
+Allow: /
+
+Sitemap: https://art18agencia.icu/sitemap.xml
