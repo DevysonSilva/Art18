@@ -65,7 +65,7 @@ ul, ol {
   --color-white: #dedee0;
 
   /*Cores auxiliares e hover */
-  --color-blue-light: #11d1d1;
+  --color-blue-light: #2A5CF7;
   --color-gray-light: #E5E5E5;
 
   /*Tipografia */
@@ -132,7 +132,7 @@ ul, ol {
 }
 
 .nav-list li a:hover {
-  color: var(--color-blue-light);
+  color: var(--color-white);
 }
 
 .btn-nav {
