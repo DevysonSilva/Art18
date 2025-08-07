@@ -60,12 +60,12 @@ ul, ol {
    ====================================================== */
 :root {
   /*Cores principais */
-  --color-blue: #11d1d1;
+  --color-blue: #2A5CF7;
   --color-black: #000000;
   --color-white: #dedee0;
 
   /*Cores auxiliares e hover */
-  --color-blue-light: #2A5CF7;
+  --color-blue-light: #11d1d1;
   --color-gray-light: #E5E5E5;
 
   /*Tipografia */
