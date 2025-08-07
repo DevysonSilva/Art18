@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art18 | Em Desenvolvimento</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1F2A44, #8FA6C8);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+p {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+}
+
+.pulse {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="margin-bottom: 1rem;">
+      <span class="pulse"></span><span>Site em desenvolvimento</span>
+    </div>
+    <h1>Art18 Estúdio</h1>
+    <p>Estamos preparando uma experiência visual incrível para você. Em breve, o site estará no ar com todo o nosso portfólio e serviços!</p>
+  </div>  <script>
+    // Código JS pode ser expandido no futuro para animações ou contadores
+    console.log("Site da Art18 carregado.");
+  </script></body>
+</html>
