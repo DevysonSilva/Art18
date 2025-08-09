@@ -56,3 +56,7 @@ document.getElementById("form-contato").addEventListener("submit", function(even
 // Limpa os campos do formulário
 document.getElementById("nome").value = "";
 document.getElementById("mensagem").value = "";
+
+
+
+
